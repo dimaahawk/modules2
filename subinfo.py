@@ -1,11 +1,11 @@
-import urllib
+from urlli2 import urlopen
 import json
 from sopel import *
 
 @module.commands('subinfo')
 def subinfo(bot, trigger):
 	try:
-		f = urllib.urlopen('http://www.reddit.com/r/adops/about.json')
+		f = urlopen('http://www.reddit.com/r/adops/about.json')
 		json_string = f.read()
 		parsed_json = json.loads(json_string)
 		readers = parsed_json['data']['subscribers']
