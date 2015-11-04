@@ -1,22 +1,23 @@
 from sopel import module
 import random
 
-@module.rule('.*programmatic.*')
-def hi1(bot, trigger):
-	rr = random.randrange(1,101)
-	if rr < 26:
-		bot.say('2.0?')
+# @module.rule('.*programmatic.*')
+# def hi1(bot, trigger):
+# 	rr = random.randrange(1,101)
+# 	if rr < 26:
+# 		bot.say('2.0?')
 
 @module.rule('.*viewability.*')
 def hi2(bot, trigger):
 	rr = random.randrange(1,101)
 	if rr < 26:
-		bot.say('Industry saver')
+		# bot.say('Industry saver')
+		bot.say('Discrepancy')
 
 @module.rule('.*dsp.*')
 def hi3(bot, trigger):
 	rr = random.randrange(1,101)
-	if rr < 26:
+	if rr < 16:
 		bot.say('Designated Slam Piece')
 
 @module.rule('.*kool-aid.*')
@@ -37,13 +38,13 @@ def hi6(bot, trigger):
 def hi7(bot, trigger):
 	rr = random.randrange(1,101)
 	if rr < 26:
-		bot.say(random.choice(['Delivery', 'fakebotsite.com', '']))
+		bot.say(random.choice(['Delivery', 'fakebotsite.com']))
 		
 @module.rule('.*adblock.*')
 def hi8(bot, trigger):
 	rr = random.randrange(1,101)
 	if rr < 26:
-		bot.say('amazing')
+		bot.say('slaughter')
 
 
 @module.rule('.*traffic.*')
