@@ -118,7 +118,6 @@ def hi22(bot, trigger):
 	 bot.say('Sure is!')
 
 
-
 @module.rule(r'\bbrb\b')
 def hi23(bot, trigger):
 	replies = [
