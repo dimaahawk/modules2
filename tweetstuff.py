@@ -5,7 +5,7 @@ import random
 try:  # Check for key file
 	from twitter_keys import keys
 except ImportError:  # Else...well get one
-	print 'Get your keys sorted....'
+	pass
 
 @module.commands('tweetstuff')
 def tweetstuff(bot, trigger):
@@ -44,8 +44,6 @@ keys = {
 	'ACCESS_TOKEN': 'put your key here',
 	'ACCESS_TOKEN_SECRET': 'put your key hereL'
 }
-
-
 '''
 
 
